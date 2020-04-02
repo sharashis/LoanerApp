@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_metadata_link">
+    <sys_metadata_link action="INSERT_OR_UPDATE">
+        <directory>update</directory>
+        <documentkey>4643939fdbf30010a82f5c7a489619e1</documentkey>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="x_94557_loaner_req_loaner_request">
+    <x_94557_loaner_req_loaner_request action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <activity_due/>
+        <additional_assignee_list/>
+        <approval>not requested</approval>
+        <approval_history/>
+        <approval_set/>
+        <assigned_to/>
+        <assignment_group/>
+        <business_duration/>
+        <business_service/>
+        <calendar_duration/>
+        <close_notes/>
+        <closed_at>2020-04-01 14:37:30</closed_at>
+        <closed_by display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</closed_by>
+        <cmdb_ci/>
+        <cmdb_ci_business_app/>
+        <comments/>
+        <comments_and_work_notes/>
+        <company/>
+        <contact_type/>
+        <contract/>
+        <correlation_display/>
+        <correlation_id/>
+        <delivery_plan/>
+        <delivery_task/>
+        <depot>ny</depot>
+        <description>Closed</description>
+        <due_date/>
+        <end_date>2020-04-10 11:08:13</end_date>
+        <escalation>0</escalation>
+        <expected_start/>
+        <follow_up/>
+        <group_list/>
+        <impact>3</impact>
+        <item_type>cmdb_ci_computer</item_type>
+        <knowledge>false</knowledge>
+        <location/>
+        <location_to_be_used/>
+        <made_sla>true</made_sla>
+        <number>LNR002001</number>
+        <opened_at>2020-04-01 14:37:16</opened_at>
+        <opened_by display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</opened_by>
+        <order/>
+        <other/>
+        <parent/>
+        <priority>4</priority>
+        <reassignment_count>0</reassignment_count>
+        <rejection_goto/>
+        <requested_for display_value="Abel Tuter (enterprise architect)">62826bf03710200044e0bfc8bcbe5df1</requested_for>
+        <service_offering/>
+        <short_description>Closed</short_description>
+        <skills/>
+        <sla_due/>
+        <sn_esign_document/>
+        <sn_esign_esignature_configuration/>
+        <sn_hr_le_activity/>
+        <start_date>2020-04-02 11:08:10</start_date>
+        <state>3</state>
+        <sys_class_name>x_94557_loaner_req_loaner_request</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-01 14:37:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4643939fdbf30010a82f5c7a489619e1</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-02 11:08:23</sys_updated_on>
+        <time_worked/>
+        <upon_approval>proceed</upon_approval>
+        <upon_reject>cancel</upon_reject>
+        <urgency>3</urgency>
+        <user_input/>
+        <variables/>
+        <watch_list/>
+        <wf_activity/>
+        <work_end/>
+        <work_notes/>
+        <work_notes_list/>
+        <work_start/>
+    </x_94557_loaner_req_loaner_request>
+</record_update>
+]]></payload>
+        <sys_class_name>sys_metadata_link</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-02 13:54:18</sys_created_on>
+        <sys_id>ea031cf7db770010a82f5c7a48961936</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>LNR002001</sys_name>
+        <sys_package display_value="Loaner Request" source="x_94557_loaner_req">5ad4edcfdb774010a82f5c7a489619e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">5ad4edcfdb774010a82f5c7a489619e1</sys_scope>
+        <sys_update_name>sys_metadata_link_ea031cf7db770010a82f5c7a48961936</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-02 13:54:18</sys_updated_on>
+        <tablename>x_94557_loaner_req_loaner_request</tablename>
+    </sys_metadata_link>
+</record_update>
