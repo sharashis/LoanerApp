@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="INSERT_OR_UPDATE">
+        <category>custom</category>
+        <client_script><![CDATA[function() {
+  /* widget controller */
+  var c = this;
+
+	c.clicked = function(){
+		c.data.action = "getFacts";
+		c.server.update();
+	}
+}]]></client_script>
+        <controller_as>c</controller_as>
+        <css>#factsContainer{
+  width: 80%;
+  margin:auto;
+}
+
+#widgetContainer{
+  width:100%;
+  background-image : url(cat-image.jpg);
+  background-position: center;
+}</css>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>true</has_preview>
+        <id>cat_facts</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {
+  
+}]]></link>
+        <name>Cat Facts</name>
+        <option_schema/>
+        <public>true</public>
+        <roles/>
+        <script><![CDATA[(function(){
+	
+	data.facts = [];
+	
+	if(input && input.action == "getFacts"){
+		try { 
+ var r = new sn_ws.RESTMessageV2('x_94557_loaner_req.Cat Facts', 'Default GET');
+
+ var response = r.execute();
+ var responseBody = JSON.parse(response.getBody());
+ var httpStatus = response.getStatusCode();
+			responseBody.all.forEach(function(elem){
+				data.facts.push(elem.text);
+			});
+}
+catch(ex) {
+ var message = ex.message;
+}
+	}
+	 
+	
+})();
+
+
+	
+	]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-04-03 12:44:22</sys_created_on>
+        <sys_id>328c41c4db401010a82f5c7a4896190f</sys_id>
+        <sys_mod_count>82</sys_mod_count>
+        <sys_name>Cat Facts</sys_name>
+        <sys_package display_value="Loaner Request" source="x_94557_loaner_req">5ad4edcfdb774010a82f5c7a489619e1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Loaner Request">5ad4edcfdb774010a82f5c7a489619e1</sys_scope>
+        <sys_update_name>sp_widget_328c41c4db401010a82f5c7a4896190f</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-04-03 14:16:15</sys_updated_on>
+        <template><![CDATA[<div id="widgetContainer">
+<!--   <img src="cat-image.jpg" width="528" height="588"/> -->
+  <!-- your widget template -->
+
+  
+  <div id="factsContainer">
+    <ul ng-repeat="fact in data.facts | limitTo: 10">
+      <li>{{fact}}</li>
+    </ul>
+
+</div>
+  <button type="button" class="btn btn-primary btn-lg" ng-click="c.clicked()">Get Cat Facts</button>
+  </div>]]></template>
+    </sp_widget>
+</record_update>
